@@ -91,6 +91,7 @@ class Database(object):
             #   (starting point for order book reconstruction)
             # min_datetime = cursor.loc[cursor.type == 'load_book'].index[0]
             dates = np.unique(cursor.loc[cursor.type == 'load_book'].index.date)
+
             start_index = cursor.loc[((cursor.index.date == dates[0]) &
                                       (cursor.type == 'load_book'))].index[-1]
             # cursor = cursor.loc[cursor.index >= min_datetime]

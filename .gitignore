@@ -9,6 +9,8 @@ build
 dist
 
 .pytest_cache
+__pycache__/
+
 
 agent/dqn_weights/*
 agent/ppo_weights/*
@@ -19,3 +21,5 @@ agent/a2c_weights/*
 
 *.ipynb
 .ipynb_checkpoints
+.DS_Store
+tests.py

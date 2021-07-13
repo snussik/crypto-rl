@@ -28,13 +28,14 @@ def test_get_orderbook_snapshot_history() -> None:
     """
     Test case to export testing/training data for reinforcement learning
     """
+ 
     start_time = dt.now(tz=TIMEZONE)
 
     sim = Simulator()
     query = {
-        'ccy': ['LTC-USD'],
-        'start_date': 20190926,
-        'end_date': 20190928
+        'ccy': ['BTC-USD'],
+        'start_date': 20200712,
+        'end_date': 20211213
     }
     orderbook_snapshot_history = sim.get_orderbook_snapshot_history(query=query)
     if orderbook_snapshot_history is None:

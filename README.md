@@ -134,6 +134,8 @@ RECORD_DATA = True
 Open a CLI/terminal and execute the command to start recording 
 full limit order book and trade data.
  ```
+ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+ 
  python3 recorder.py
  ```
 
