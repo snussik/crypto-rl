@@ -6,7 +6,6 @@ attrs==21.2.0
 cached-property==1.5.2
 certifi==2021.5.30
 chardet==3.0.4
--e git+https://github.com/snussik/crypto-rl.git@437e0986e21bea739e77be3acbd4d8e97cb3d883#egg=crypto_rl
 cycler==0.10.0
 dataclasses==0.8
 decorator==5.0.9
